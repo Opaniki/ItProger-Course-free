@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #2b2b2b;
+    padding: 25px 30px;
+    border-bottom: 2px solid #000;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+.content {
+    min-height: 70vh;
+    padding: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Основной текст */
+.main-block {
+    flex: 3;
+    background: #262626;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Боковое меню */
+.aside-block {
+    flex: 1;
+    background: #2f2f2f;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.aside-block h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    border-bottom:  1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Hero-блок*/
+.hero{
+    position:relative;
+    height: 300px;
+    background: url('https://miro.medium.com/v2/resize:fit:1400/0*7VyEZgzwUhQmeBqb');
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+footer {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-top: 2px solid #000;
+    padding: 25px 30px;
+    text-align: center;
+}
