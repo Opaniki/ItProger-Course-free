@@ -14,9 +14,9 @@
             <span class="logo">ItProger App</span>
             <nav>
                 <ul>
-                    <li><a href="/">Main</a></li>
-                    <li><a href="/about">About us</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="{{ route('home') }}">Main</a></li>
+                    <li><a href="{{ route('about') }}">About us</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
             </nav>
         </div>
