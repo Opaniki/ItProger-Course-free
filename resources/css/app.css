@@ -106,3 +106,26 @@ footer {
     padding: 25px 30px;
     text-align: center;
 }
+
+/*Блок для невалидных полей(HTML5)*/
+form input:invalid,
+form textarea:invalid {
+    border-color: #ef4444;
+}
+
+.block-error {
+    background: #c23939;
+    width: 96%;
+    padding:10px 2%;
+}
+
+.block-error li {
+    line-height: 170%;
+    color: #e8e8e8;
+    font-size: 17px;
+}
+footer {
+    border-top: 2px solid #000;
+    background-color: #2b2b2b;
+    text-align: center;
+}

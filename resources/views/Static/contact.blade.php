@@ -5,8 +5,18 @@ Contacts
 @endsection
 
 @section('content')
+@if($errors->any())
+    <div class="block-error">
+        <ul>
+            @foreach($errors->all() as $err)
+                <li>{{ $err }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 <div class="main-container">
-    <div class="main-block"> 
+    <div class="main-block contact-block"> 
         <h1>Contact page</h1>
         <form action="{{ route('contact.post') }}" method="POST">
             @csrf
