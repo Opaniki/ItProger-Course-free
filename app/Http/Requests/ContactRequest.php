@@ -24,8 +24,8 @@ class ContactRequest extends FormRequest
         return [
             'name' => 'required|min:2|max:50',
             'email' => ['required', 'min:5', 'max:100', 'email',], 
-            'subject' => 'required',
-            'message' => 'required',
+            'subject' => ['required', 'min:5', 'max:100'],
+            'message' => ['required', 'min:5', 'max:1000'],
         ];
     }
 
