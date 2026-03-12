@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
 use App\Models\Message;
 use Illuminate\Http\Request;
@@ -33,6 +34,8 @@ class BasicController extends Controller
         $message-> subject = $request->input ('subject');
         $message-> text = $request->input ('message');
         $message-> save();
+
+        Mail::to('rundyaanastasiya@gmail.com')->send(new ContactMail($message));
 
         return redirect()->route('home');
         //return redirect('/'); Один из вариантов перенаправления после сохранения данных
